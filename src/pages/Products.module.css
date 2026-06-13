@@ -1,0 +1,61 @@
+.main { padding-top: 80px; min-height: 100vh; background: #fff; }
+.header { position: relative; padding: 80px 0 60px; background: var(--bg-2); overflow: hidden; border-bottom: 1px solid var(--steel); }
+.headerBg { position: absolute; inset: 0; background-image: linear-gradient(#e8e8e8 1px, transparent 1px), linear-gradient(90deg, #e8e8e8 1px, transparent 1px); background-size: 40px 40px; opacity: 0.5; }
+.breadcrumb { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 20px; position: relative; }
+.breadcrumb a { color: var(--accent); }
+.breadcrumb span { margin: 0 8px; }
+.pageTitle { font-size: clamp(48px, 7vw, 96px); line-height: 0.95; position: relative; color: var(--dark); }
+.pageDesc { color: var(--muted); font-size: 15px; line-height: 1.8; max-width: 600px; margin-top: 16px; position: relative; }
+.filterSection { background: #fff; border-bottom: 1px solid var(--steel); padding: 16px 0; position: sticky; top: 80px; z-index: 10; }
+.filterBar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.filterBtn { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; background: var(--bg-2); border: 1px solid var(--steel); color: var(--muted); padding: 8px 20px; border-radius: 2px; transition: all 0.2s; }
+.filterBtn:hover { border-color: var(--accent); color: var(--dark); }
+.filterActive { background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important; }
+.resultCount { margin-left: auto; font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 0.1em; color: var(--mid); }
+.catalog { padding: 60px 0 100px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background: #fff; border: 1px solid var(--steel); border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 20px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
+.card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--steel); transition: background 0.2s; }
+.card:hover { border-color: rgba(22,163,74,0.3); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+.card:hover::before { background: var(--accent); }
+.highlighted { border-color: rgba(22,163,74,0.25); }
+.highlighted::before { background: var(--accent) !important; }
+.highlightBadge { position: absolute; top: 16px; right: 16px; font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; background: var(--accent); color: #fff; padding: 3px 10px; border-radius: 2px; }
+.catBadge { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); background: rgba(22,163,74,0.08); border: 1px solid rgba(22,163,74,0.2); padding: 3px 10px; border-radius: 2px; display: inline-block; margin-bottom: 12px; }
+.productName { font-size: 26px; color: var(--dark); margin-bottom: 4px; line-height: 1; }
+.productTagline { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mid); margin-bottom: 10px; }
+.productDesc { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.specs { background: var(--bg-2); border-radius: 3px; padding: 16px; }
+.specTitle { font-size: 11px; letter-spacing: 0.15em; color: var(--mid); margin-bottom: 12px; }
+.specGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.specItem { display: flex; flex-direction: column; gap: 2px; }
+.specKey { font-size: 11px; color: var(--mid); }
+.specVal { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; color: var(--dark); }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--steel); color: var(--muted); padding: 3px 8px; border-radius: 2px; }
+.cardFooter { display: flex; gap: 10px; margin-top: auto; }
+.quoteBtn { flex: 1; background: var(--accent); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 16px; border-radius: 2px; text-align: center; text-decoration: none; transition: background 0.2s; }
+.quoteBtn:hover { background: var(--accent-dark); }
+.infoBtn { background: transparent; border: 1px solid var(--steel); color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 14px; border-radius: 2px; text-decoration: none; transition: all 0.2s; white-space: nowrap; }
+.infoBtn:hover { border-color: var(--accent); color: var(--accent); }
+.customSection { padding: 60px 0 100px; background: var(--bg-2); }
+.customCard { background: #fff; border: 1px solid var(--steel); border-radius: 4px; padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+.customCard h2 { font-size: 40px; margin: 8px 0 12px; color: var(--dark); }
+.customCard p { color: var(--muted); font-size: 15px; line-height: 1.7; max-width: 560px; }
+.eyebrow { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
+.customBtn { flex-shrink: 0; background: var(--accent); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; text-decoration: none; white-space: nowrap; transition: background 0.2s; }
+.customBtn:hover { background: var(--accent-dark); }
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .customCard { flex-direction: column; align-items: flex-start; } .customBtn { width: 100%; text-align: center; } }
+
+/* ── EXTRA RESPONSIVE ── */
+@media (max-width: 480px) {
+  .pageTitle { font-size: 48px; }
+  .filterBar { gap: 6px; }
+  .filterBtn { padding: 6px 12px; font-size: 11px; }
+  .resultCount { display: none; }
+  .card { padding: 20px 16px; }
+  .specGrid { grid-template-columns: 1fr 1fr; }
+  .customCard { padding: 28px 20px; }
+  .customCard h2 { font-size: 28px; }
+}

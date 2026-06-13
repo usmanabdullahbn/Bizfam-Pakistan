@@ -1,0 +1,49 @@
+.main { padding-top: 80px; min-height: 100vh; background: #fff; }
+.header { position: relative; padding: 80px 0 60px; background: var(--bg-2); overflow: hidden; border-bottom: 1px solid var(--steel); }
+.bg { position: absolute; inset: 0; background-image: linear-gradient(#e8e8e8 1px, transparent 1px), linear-gradient(90deg, #e8e8e8 1px, transparent 1px); background-size: 40px 40px; opacity: 0.5; }
+.eyebrow { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; position: relative; }
+.title { font-size: clamp(48px, 7vw, 96px); line-height: 0.95; position: relative; color: var(--dark); }
+.accent { color: var(--accent); }
+.subtitle { color: var(--muted); font-size: 16px; line-height: 1.8; max-width: 600px; margin-top: 16px; position: relative; }
+.contactSection { padding: 80px 0 120px; }
+.grid { display: grid; grid-template-columns: 1fr 420px; gap: 48px; align-items: start; }
+.formTitle { font-size: 32px; margin-bottom: 32px; color: var(--dark); }
+.form { display: flex; flex-direction: column; gap: 20px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.field input, .field select, .field textarea { background: #fff; border: 1px solid var(--steel); border-radius: 3px; color: var(--dark); font-family: 'Barlow', sans-serif; font-size: 15px; padding: 12px 16px; transition: border-color 0.2s; width: 100%; outline: none; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(22,163,74,0.08); }
+.field select { appearance: none; cursor: pointer; background: #fff; }
+.field textarea { resize: vertical; }
+.submitBtn { background: var(--accent); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 16px 36px; border: none; border-radius: 3px; cursor: pointer; transition: background 0.2s, transform 0.1s; align-self: flex-start; }
+.submitBtn:hover { background: var(--accent-dark); transform: translateY(-2px); }
+.success { background: #f0fdf4; border: 1px solid rgba(22,163,74,0.3); border-radius: 4px; padding: 48px; text-align: center; }
+.successIcon { width: 56px; height: 56px; background: rgba(22,163,74,0.1); border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--accent); margin: 0 auto 20px; }
+.success h3 { font-size: 28px; margin-bottom: 12px; color: var(--dark); }
+.success p { color: var(--muted); font-size: 15px; line-height: 1.7; margin-bottom: 24px; }
+.resetBtn { background: transparent; border: 1px solid var(--steel); color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 24px; border-radius: 3px; cursor: pointer; transition: all 0.2s; }
+.resetBtn:hover { border-color: var(--accent); color: var(--accent); }
+.infoCard { background: #fff; border: 1px solid var(--steel); border-radius: 4px; padding: 32px; margin-bottom: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+.infoCard h3 { font-size: 24px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--steel); color: var(--dark); }
+.infoItem { display: flex; gap: 16px; margin-bottom: 20px; }
+.infoItem:last-child { margin-bottom: 0; }
+.infoIcon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.infoItem strong { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 4px; }
+.infoItem p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+.quickCard { background: linear-gradient(135deg, rgba(22,163,74,0.06), #f8fdf9); border: 1px solid rgba(22,163,74,0.2); border-radius: 4px; padding: 24px; }
+.quickCard h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.quickCard p { color: var(--muted); font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+.quickBadges { display: flex; flex-direction: column; gap: 8px; }
+.quickBadges span { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; color: var(--dark); }
+@media (max-width: 1024px) { .grid { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .row { grid-template-columns: 1fr; } }
+
+/* ── EXTRA RESPONSIVE ── */
+@media (max-width: 480px) {
+  .title { font-size: 48px; }
+  .formTitle { font-size: 26px; }
+  .submitBtn { width: 100%; text-align: center; }
+  .row { grid-template-columns: 1fr; }
+  .grid { gap: 32px; }
+}
