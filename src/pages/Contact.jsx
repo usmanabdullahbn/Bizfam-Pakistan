@@ -99,9 +99,9 @@ export default function Contact() {
                   <div>
                     <strong>Bizfam Pakistan (Pvt.) Ltd.</strong>
                     <p>
-                      Industrial Zone, S.I.T.E. Area
+                      Plot # 618, Sector 31-B, Korangi
                       <br />
-                      Karachi, Sindh, Pakistan
+                      Karachi, Pakistan
                     </p>
                   </div>
                 </div>
@@ -109,18 +109,14 @@ export default function Contact() {
                   <span className={styles.infoIcon}>{'\u260E'}</span>
                   <div>
                     <strong>Phone</strong>
-                    <p>+92-21-XXXX-XXXX</p>
+                    <p>0335-6628575</p>
                   </div>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoIcon}>{'\u2709'}</span>
                   <div>
                     <strong>Email</strong>
-                    <p>
-                      info@bizfampakistan.com
-                      <br />
-                      sales@bizfampakistan.com
-                    </p>
+                    <p>bizfam.pakistan@gmail.com</p>
                   </div>
                 </div>
                 <div className={styles.infoItem}>

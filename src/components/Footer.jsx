@@ -103,15 +103,15 @@ export default function Footer() {
               <ul className={styles.contactList}>
                 <li>
                   <span className={styles.contactIcon}>{'\u{1F4CD}'}</span>
-                  <span>Industrial Zone, S.I.T.E. Area, Karachi, Sindh, Pakistan</span>
+                  <span>Plot # 618, Sector 31-B, Korangi, Karachi, Pakistan</span>
                 </li>
                 <li>
                   <span className={styles.contactIcon}>{'\u260E'}</span>
-                  <span>+92-21-XXXX-XXXX</span>
+                  <span>0335-6628575</span>
                 </li>
                 <li>
                   <span className={styles.contactIcon}>{'\u2709'}</span>
-                  <span>info@bizfampakistan.com</span>
+                  <span>bizfam.pakistan@gmail.com</span>
                 </li>
                 <li>
                   <span className={styles.contactIcon}>{'\u23F0'}</span>
